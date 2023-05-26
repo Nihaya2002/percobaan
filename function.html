@@ -1,0 +1,42 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title> Hello World Javascript</title>
+        </head>
+        <body>
+            <script>
+                function tambah(a, b) {
+                return a + b;
+                }
+                console.log(tambah(3, 5));
+
+
+                function hitungLuasSegitiga(alas, tinggi) {
+                return 0.5 * alas * tinggi;
+                }
+                console.log(hitungLuasSegitiga(4, 6));
+
+
+                function hitungPangkat(angka, pangkat) {
+                return Math.pow(angka, pangkat);
+                }
+                console.log(hitungPangkat(2, 3));
+
+
+                function cekGenapGanjil(angka) {
+                if (angka % 2 === 0) {
+                    return 'Genap';
+                } else {
+                    return 'Ganjil';
+                }
+                }
+                console.log(cekGenapGanjil(7));
+
+                function gabungkanString(string1, string2) {
+                return string1 + ' ' + string2;
+                }
+                console.log(gabungkanString('Hello', 'World'));
+
+            </script>
+        </body>
+        </html>

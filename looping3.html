@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    // while loop: Loop while digunakan untuk melakukan iterasi selama kondisi yang ditentukan benar atau true.
+    // Contoh penggunaan:
+    console.log("==== while =====")
+    var i = 0;
+    while (i < 5) {
+        console.log(i);
+        i++;
+    }
+    // do-while loop: Loop do-while hampir sama dengan while loop, tetapi pernyataan di dalam loop akan dieksekusi setidaknya satu kali sebelum kondisi dicek.
+    // Contoh penggunaan:
+    let a = prompt("masukan jumlah kucing");
+
+    do {
+        document.write("Anak kucing ke " + a + "<br>");
+        a++;
+    } while (a < 10);
+
+
+    // for...in loop: Loop for...in digunakan untuk melakukan iterasi melalui properti-properti dari sebuah objek. Loop ini cocok digunakan untuk mengulang 
+    // melalui objek atau array yang memiliki indeks numerik.
+    //menampilkan isi dari objek 
+    // Contoh penggunaan:
+    console.log("==== for...in =====")
+    var obj = { a: 1, b: 2, c: 3 };
+    for (let prop in obj) {
+        console.log(prop + ': ' + obj[prop]);
+    }
+
+
+    // for...of loop: Loop for...of digunakan untuk melakukan iterasi melalui elemen-elemen iterable seperti array, 
+    // string, atau objek yang dapat diiterasi (iterable objects).
+    // Contoh penggunaan:
+    console.log("==== for...of =====")
+    var arr = [1, 2, 3];
+    for (let element of arr) {
+        console.log(element);
+    }
+
+
+    // forEach loop: Metode forEach tersedia untuk array dan digunakan untuk melakukan iterasi melalui setiap elemen array. 
+    // Metode ini menggunakan callback function yang akan dipanggil untuk setiap elemen.
+    // Contoh penggunaan:
+    console.log("==== forEach =====")
+    var arr = [1, 2, 3];
+    arr.forEach(function (element) {
+        console.log(element);
+    });
+
+</script>

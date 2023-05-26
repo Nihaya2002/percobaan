@@ -1,0 +1,44 @@
+<DOCTYPE html>
+    <html>
+        
+        <body>
+            <script>
+                //looping for
+                for (let i = 0; i < 5; i++) {
+                console.log(i);
+                }
+                let i = 0;
+
+                //looping while
+                // let secretNumber = Math.floor(Math.random() * 10) + 1;
+                // let guess;
+                // while (guess !== secretNumber) {
+                // guess = parseInt(prompt("Tebak angka antara 1 hingga 10"));
+                // if (guess === secretNumber) {
+                //     console.log("Selamat, tebakanmu benar!");
+                // } else {
+                //     console.log("Tebakanmu salah, coba lagi.");
+                // }
+                // }
+
+                //looping foreach
+                const arr = [1, 2, 3];
+                arr.forEach(function(element) {
+                console.log(element);
+                });
+
+                // foreach 
+                var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+                days.forEach((day) => {
+                    document.write("<p>" + day + "</p>");
+                });
+
+                //looping do while
+                let input;
+                do {
+                input = prompt("Masukkan sebuah angka");
+                } while (isNaN(input));
+                console.log("Input valid: " + input);
+            </script>
+        </body>
+        </html>
